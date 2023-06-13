@@ -1,8 +1,31 @@
 <html>
 <head>
     <title>root index.html</title>
+
+    <!-- Be sure to load the client library on any page that a user might sign in on. Use the following code snippet: -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
     ROOT INDEX.HTML
+
+    <!-- Copied from https://developers.google.com/identity/gsi/web/tools/configurator -->
+    <div id="g_id_onload"
+        data-client_id="1086983655514-3hctr1oqgdq4r9ab64mu22jnog93aqcc.apps.googleusercontent.com"
+        data-context="signin"
+        data-ux_mode="popup"
+        data-login_uri="google_cred_resp"
+        data-auto_prompt="false">
+    </div>
+
+    <!-- Copied from https://developers.google.com/identity/gsi/web/tools/configurator -->
+    <div class="g_id_signin"
+        data-type="standard"
+        data-shape="rectangular"
+        data-theme="outline"
+        data-width=200
+        data-text="signin_with"
+        data-size="large"
+        data-logo_alignment="left">
+    </div>
 </body>
 </html>
